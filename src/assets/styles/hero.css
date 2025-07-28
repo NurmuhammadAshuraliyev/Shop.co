@@ -1,0 +1,46 @@
+.hero::before {
+  content: url(../icons/middle-star.svg);
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.hero::after {
+  content: url(../icons/large-star.svg);
+  position: absolute;
+  right: 82px;
+  top: 93px;
+}
+
+.hero .title {
+  font-family: "INTEGRAL CF";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 64px;
+  color: #000000;
+}
+
+.hero .description {
+  font-family: "INTEGRAL CF";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.hero .our-services .title {
+  font-weight: 700;
+  font-family: "INTEGRAL CF";
+  font-size: 30px;
+  line-height: 54px;
+  color: #000000;
+}
+.hero .our-services .description {
+  font-family: "INTEGRAL CF";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 22px;
+}

@@ -1,0 +1,15 @@
+.btn {
+  padding: 15px 0px;
+  border-radius: 62px;
+  cursor: pointer;
+}
+
+.btn.primary {
+  background-color: #000;
+  color: #fff;
+}
+
+.btn.secondary {
+  background-color: #f0f0f0;
+  color: rgb(0, 0, 0, 0.6);
+}

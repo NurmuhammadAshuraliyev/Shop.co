@@ -1,0 +1,43 @@
+@import "tailwindcss";
+
+body {
+  font-family: INTEGRAL CF;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: INTEGRAL CF;
+  font-weight: 400;
+  src: url(./assets/fonts/IntegralCF/OTF/IntegralCF-Regular.otf);
+}
+@font-face {
+  font-family: INTEGRAL CF;
+  font-weight: 500;
+  src: url(./assets/fonts/IntegralCF/OTF/IntegralCF-Medium.otf);
+}
+@font-face {
+  font-family: INTEGRAL CF;
+  font-weight: 600;
+  src: url(./assets/fonts/IntegralCF/OTF/IntegralCF-DemiBold.otf);
+}
+@font-face {
+  font-family: INTEGRAL CF;
+  font-weight: 700;
+  src: url(./assets/fonts/IntegralCF/OTF/IntegralCF-Bold.otf);
+}
+
+.my-container {
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 13px;
+}
+
+.hero {
+  position: relative;
+  height: calc(100vh - 104px);
+  background: url("./assets/hero-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}

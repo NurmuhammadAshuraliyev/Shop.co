@@ -1,0 +1,31 @@
+.style-module_starRatingWrap__q-lJC {
+  display: flex !important;
+  align-items: center;
+  gap: 5px;
+}
+
+.style-module_starRatingWrap__q-lJC .empty-icons {
+  display: flex !important;
+  gap: 6px;
+}
+
+.style-module_starRatingWrap__q-lJC .filled-icons {
+  display: flex !important;
+  gap: 6px;
+}
+
+.style-module_starRatingWrap__q-lJC .empty-icons svg {
+  flex-shrink: 0;
+}
+
+.react-simple-star-rating-tooltip {
+  font-size: 16px;
+  order: 1;
+  padding: 0;
+  background-color: transparent;
+  color: #ffa51f;
+  min-width: auto;
+  margin-top: 4px;
+  margin-left: 0 !important;
+  text-align: center;
+}
