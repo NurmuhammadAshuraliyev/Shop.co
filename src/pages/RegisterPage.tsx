@@ -7,7 +7,7 @@ export const RegisterPage = () => {
   const [password, setPassword] = useState("");
   const navigate = useNavigate();
 
-  const handleSubmit = async (e) => {
+  const handleSubmit = async (e: any) => {
     e.preventDefault();
 
     try {
@@ -21,7 +21,7 @@ export const RegisterPage = () => {
 
       if (response.status === 201 || response.status === 200) {
         alert("Ro'yxatdan muvaffaqiyatli o'tdingiz!");
-        navigate("/"); // HomePage ga redirect
+        navigate("/");
       }
     } catch (error) {
       console.error("Xatolik:", error);

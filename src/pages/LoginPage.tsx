@@ -5,10 +5,9 @@ import Spinner from "../components/ui/Spinner";
 import { useUserStore } from "../store/user.store";
 import axios from "axios";
 
-// Bitta umumiy axios instance yaratamiz (optional, lekin tavsiya qilinadi)
 const api = axios.create({
   baseURL: "https://authuser.duckdns.org/api",
-  withCredentials: true, // cookie yuboriladi
+  withCredentials: true,
 });
 
 export const LoginPage = () => {
@@ -18,7 +17,6 @@ export const LoginPage = () => {
   const passwordInputRef = useRef<HTMLInputElement>(null);
   const [loading, setLoading] = useState(false);
 
-  // Komponent yuklanganda tokenni cookie'dan tekshiradi
   useEffect(() => {
     api
       .get("/me")
@@ -28,9 +26,7 @@ export const LoginPage = () => {
           navigate("/");
         }
       })
-      .catch(() => {
-        // Token yo'q, yoki login qilinmagan
-      });
+      .catch(() => {});
   }, []);
 
   const handleSubmit = async (event: FormEvent) => {
