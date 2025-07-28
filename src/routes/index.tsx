@@ -11,7 +11,7 @@ export const routes = createBrowserRouter([
     element: <AppWrapperLayout />,
     children: [
       {
-        path: "",
+        path: "/",
         element: <RootLayout />,
         children: [
           {
@@ -21,11 +21,11 @@ export const routes = createBrowserRouter([
         ],
       },
       {
-        path: "signin",
+        path: "/signin",
         element: <LoginPage />,
       },
       {
-        path: "signup",
+        path: "/signup",
         element: <RegisterPage />,
       },
     ],
